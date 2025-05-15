@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./haha.jpg"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+<div class="description">
+  <h1>Forestée Villa – Thiên đường nghỉ dưỡng giữa lòng thiên nhiên</h1>
+  <p>
+    <strong>Địa chỉ:</strong> Khu rừng sinh thái Forestée, xã Minh Phú, huyện Sóc Sơn, Hà Nội
+  </p>
+  <p>
+    <strong>Chủ đầu tư:</strong> Công ty CP EcoLiving Việt Nam – đơn vị tiên phong trong kiến trúc xanh và nghỉ dưỡng cao cấp
+  </p>
+
+  <h2>Quy mô và thiết kế</h2>
+  <ul>
+    <li>
+      Diện tích biệt thự lên đến 350m², bao gồm 3 tầng, sân vườn rộng và hồ bơi riêng cực chill
+    </li>
+    <li>
+      Thiết kế mang đậm phong cách resort châu Âu hiện đại, kết hợp đá tự nhiên, gỗ mộc và kính cường lực toàn cảnh
+    </li>
+    <li>
+      Trần cao, không gian mở liên kết phòng khách – phòng ăn – bếp với thiên nhiên bên ngoài
+    </li>
+    <li>
+      Phòng ngủ master có view rừng và hồ bơi riêng, tích hợp phòng thay đồ và phòng tắm lớn với bồn tắm nằm
+    </li>
+  </ul>
+
+  <h2>Tiện ích</h2>
+  <ul>
+    <li>
+      Hồ bơi nước tràn thiết kế sinh thái, hòa mình giữa thiên nhiên cây cối và ánh nắng
+    </li>
+    <li>
+      Khu BBQ ngoài trời, sân thiền, bếp nướng và khu cafe sân vườn riêng
+    </li>
+    <li>
+      Dịch vụ chăm sóc villa, dọn dẹp định kỳ và bảo trì định chuẩn resort 5 sao
+    </li>
+    <li>
+      Bảo vệ an ninh 24/7, hệ thống đèn cảnh quan và lối đi bộ quanh rừng
+    </li>
+  </ul>
+
+  <h2>Vị trí và giá trị nghỉ dưỡng</h2>
+  <ul>
+    <li>
+      Chỉ cách trung tâm Hà Nội 45 phút lái xe – không gian sống tách biệt với khói bụi, gần gũi núi rừng
+    </li>
+    <li>
+      Giá trị đầu tư dài hạn, phù hợp nghỉ dưỡng cuối tuần hoặc cho thuê ngắn hạn theo mô hình homestay cao cấp
+    </li>
+  </ul>
+
+  <p><strong>Dự kiến bàn giao:</strong> Quý 3 năm 2026</p>
+
+  <p>
+    Forestée Villa không đơn thuần là một căn biệt thự, mà là nơi tái tạo năng lượng và nuôi dưỡng cảm hứng sống đỉnh cao. Từng góc nhỏ trong biệt thự đều mang đến cảm giác thư giãn và chan hòa với thiên nhiên – từ tiếng chim rừng buổi sáng cho đến ánh hoàng hôn phản chiếu trên mặt hồ bơi.
+  </p>
+  <p>
+    Đây là chốn trở về lý tưởng cho những tâm hồn yêu thiên nhiên, nghệ thuật và sự riêng tư. Forestée Villa – không chỉ là nơi ở, mà là trải nghiệm sống đáng mơ ước giữa rừng xanh.
+  </p>
+</div>
+<a href="/index.html">Quay trở lại trang chủ</a>
+  </body>
+</html>

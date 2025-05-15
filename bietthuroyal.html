@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./bietthuroyal.jpg"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+<div class="description">
+  <h1>Biệt Thự Opal Skyview</h1>
+  <p>
+    <strong>Địa chỉ:</strong> Khu phức hợp Opal Boulevard, Đại lộ Phạm Văn Đồng, Thành phố Thủ Đức, TP.HCM
+  </p>
+  <p>
+    <strong>Chủ đầu tư:</strong> Tập đoàn Đất Xanh – đơn vị phát triển bất động sản nổi bật với các dự án căn hộ cao cấp và biệt thự khép kín
+  </p>
+
+  <h2>Quy mô và thiết kế</h2>
+  <ul>
+    <li>
+      Biệt thự 2 tầng gam màu trắng sang trọng, phong cách Tây Âu thanh lịch kết hợp đường nét kiến trúc hiện đại
+    </li>
+    <li>
+      Diện tích xây dựng 50m², tối ưu không gian sinh hoạt với sân nhỏ trước nhà, ban công rộng và cửa kính cao sát trần
+    </li>
+    <li>
+      Nội thất nhập khẩu từ Ý và Đức, sàn gỗ chống ẩm, hệ thống đèn LED âm trần và bếp thông minh tích hợp
+    </li>
+  </ul>
+
+  <h2>Tiện ích</h2>
+  <ul>
+    <li>
+      Công viên nội khu cây xanh phủ rộng, lối đi dạo lát đá và khu vườn treo mini trên tầng thượng
+    </li>
+    <li>
+      Camera an ninh toàn khu, kiểm soát ra vào bằng vân tay và thẻ từ
+    </li>
+    <li>
+      Hồ bơi tràn viền, phòng gym chuẩn quốc tế và lounge sinh hoạt cộng đồng
+    </li>
+    <li>
+      Tiệm cà phê sân vườn, minimart và nhà trẻ nội khu chỉ cách vài bước chân
+    </li>
+  </ul>
+
+  <h2>Vị trí và giá trị đầu tư</h2>
+  <ul>
+    <li>
+      Giao thông thuận tiện – nằm ngay trục đường Phạm Văn Đồng, kết nối nhanh đến sân bay Tân Sơn Nhất và trung tâm Quận 1
+    </li>
+    <li>
+      Nằm trong khu dân cư tri thức cao, tiềm năng cho thuê và sinh lời ổn định theo thời gian
+    </li>
+  </ul>
+
+  <p><strong>Dự kiến bàn giao:</strong> Quý 2 năm 2025</p>
+
+  <p>
+    Biệt thự Opal Skyview là lựa chọn hoàn hảo cho gia đình trẻ hoặc các cặp đôi yêu thích phong cách sống hiện đại, riêng tư nhưng vẫn đầy đủ tiện ích. Với kiến trúc mở, mỗi góc không gian đều được tận dụng để đón ánh sáng tự nhiên và tạo cảm giác rộng rãi.
+  </p>
+  <p>
+    Thiết kế thông minh với cửa lùa kính, không gian sinh hoạt liền mạch và màu sắc trang nhã giúp căn biệt thự trở nên tinh tế và đẳng cấp. Đây không chỉ là nơi ở mà còn là biểu tượng phong cách sống mới tại khu Đông TP.HCM.
+  </p>
+  <p>
+    Khu biệt thự được quản lý theo tiêu chuẩn quốc tế, có dịch vụ hỗ trợ 24/7 từ dọn dẹp, bảo trì kỹ thuật đến chăm sóc cảnh quan. Opal Skyview là nơi an cư lý tưởng cho những ai tìm kiếm sự tiện nghi, an toàn và sang trọng giữa lòng thành phố <br>
+<a href="https://yeagernguyen.github.io/Real__estate/">Quay trở lại trang chủ</a>
+  </body>
+</html>

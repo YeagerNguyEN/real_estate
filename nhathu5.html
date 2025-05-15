@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./nhathu5.jpg"
+        alt="Biệt Thự Golden Horizon Villas"
+        class="product-image"
+      />
+<div class="description">
+  <h1>Biệt Thự Golden Horizon Villas – Nhỏ gọn, tinh tế, sang trọng từng chi tiết</h1>
+  <p>
+    <strong>Địa chỉ:</strong> Khu dân cư ven biển Golden Horizon, phường Long Hòa, quận Bình Thủy, TP. Cần Thơ
+  </p>
+  <p>
+    <strong>Chủ đầu tư:</strong> Tập đoàn Nam Long – đơn vị phát triển đô thị bền vững hàng đầu miền Tây
+  </p>
+
+  <h2>Quy mô và thiết kế</h2>
+  <ul>
+    <li>
+      Biệt thự 3 tầng thiết kế tối ưu không gian trên diện tích nhỏ – phù hợp cho gia đình trẻ hoặc cặp đôi thành đạt
+    </li>
+    <li>
+      Phong cách hiện đại tối giản, sử dụng tông trắng – vàng nhạt làm chủ đạo, kết hợp kính cường lực và gỗ công nghiệp cao cấp
+    </li>
+    <li>
+      Mỗi tầng có ban công thoáng, không gian mở liên thông phòng khách – bếp – sân vườn mini phía sau
+    </li>
+  </ul>
+
+  <h2>Tiện ích</h2>
+  <ul>
+    <li>
+      Công viên nội khu, sân chơi trẻ em và đường dạo bộ phủ bóng cây xanh
+    </li>
+    <li>
+      Hệ thống camera an ninh toàn khu, cổng vào kiểm soát thẻ từ
+    </li>
+    <li>
+      Siêu thị mini, quán cà phê, phòng gym trong phạm vi 200m
+    </li>
+    <li>
+      Chỉ 5 phút đến bến Ninh Kiều, 10 phút đến sân bay Cần Thơ
+    </li>
+  </ul>
+
+  <h2>Vị trí và tiềm năng</h2>
+  <ul>
+    <li>
+      Nằm trong khu dân cư kiểu mẫu ven sông, không khí trong lành, hạ tầng đồng bộ
+    </li>
+    <li>
+      Giá trị gia tăng ổn định nhờ quy hoạch thông minh và tốc độ đô thị hóa cao tại Cần Thơ
+    </li>
+  </ul>
+
+  <p><strong>Dự kiến bàn giao:</strong> Quý 1 năm 2026</p>
+
+  <p>
+    Biệt thự Golden Horizon Villas hướng đến phong cách sống tinh gọn, vừa đủ nhưng vẫn đẳng cấp. Dù diện tích không quá lớn, mỗi chi tiết thiết kế đều được chăm chút kỹ lưỡng để đảm bảo sự tiện nghi, riêng tư và thẩm mỹ cao cho gia chủ.
+  </p>
+  <p>
+    Đây là lựa chọn lý tưởng cho những ai tìm kiếm một mái ấm yên bình giữa lòng thành phố – nơi bạn có thể tận hưởng hoàng hôn bên ban công, chăm sóc khu vườn nhỏ mỗi sáng, và khởi đầu một cuộc sống chất lượng từ những điều giản dị nhất.
+  </p>
+</div>
+
+        <a href="https://yeagernguyen.github.io/Real__estate/">Quay trở lại trang chủ</a>
+      </div>
+    </div>
+  </body>
+</html>
+

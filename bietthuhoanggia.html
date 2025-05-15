@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./bietthuhoanggia.jpg"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+      <div class="description">
+        <h1>Biệt Thự The Manor Central Park</h1>
+        <p>
+          <strong>Địa chỉ:</strong> Khu đô thị The Manor Central Park, Đại lộ
+          Chu Văn An, Quận Hoàng Mai, Hà Nội
+        </p>
+        <p>
+          <strong>Chủ đầu tư:</strong> Tập đoàn Bitexco – đơn vị tiên phong
+          trong phát triển bất động sản cao cấp tại Việt Nam
+        </p>
+
+        <h2>Quy mô và thiết kế</h2>
+        <ul>
+          <li>
+            Biệt thự 3 tầng màu trắng tinh tế, thiết kế theo phong cách tân cổ
+            điển kết hợp hiện đại
+          </li>
+          <li>
+            Diện tích xây dựng từ 250m² đến 400m², với sân vườn rộng, gara riêng
+            và ban công thoáng mát
+          </li>
+          <li>
+            Nội thất cao cấp nhập khẩu từ châu Âu, bố trí tối ưu ánh sáng và
+            không gian sống
+          </li>
+        </ul>
+
+        <h2>Tiện ích</h2>
+        <ul>
+          <li>
+            Công viên nội khu xanh mát rộng hơn 10.000m², phù hợp cho sinh hoạt
+            và thư giãn cuối tuần
+          </li>
+          <li>
+            Hệ thống an ninh 24/7, kiểm soát thông minh từng khu vực bằng công
+            nghệ AI
+          </li>
+          <li>
+            Khu thể thao đa năng, sân tennis, bể bơi và trung tâm thể dục cao
+            cấp
+          </li>
+          <li>
+            Trường học quốc tế, trung tâm thương mại và nhà hàng sang trọng
+            trong bán kính 500m
+          </li>
+        </ul>
+
+        <h2>Vị trí và giá trị đầu tư</h2>
+        <ul>
+          <li>
+            Nằm liền kề và kết nối trực tiếp với vành đai 3, chỉ 10 phút đến
+            trung tâm Hà Nội
+          </li>
+          <li>
+            Khu đô thị mới đẳng cấp bậc nhất thủ đô – tiềm năng tăng giá và cho
+            thuê cao
+          </li>
+        </ul>
+
+        <p><strong>Dự kiến bàn giao:</strong> Quý 4 năm 2026</p>
+
+        <p>
+          Biệt thự The Manor Central Park sở hữu vị trí chiến lược giữa lòng đô
+          thị hiện đại, thuận tiện di chuyển đến trung tâm văn hóa, hành chính
+          và thương mại. Với thiết kế sang trọng, không gian sống tại đây mang
+          đến sự yên tĩnh, đẳng cấp và khác biệt giữa nhịp sống đô thị sôi động.
+        </p>
+        <p>
+          Mỗi căn biệt thự là một kiệt tác kiến trúc với hệ thống cửa sổ lớn,
+          trần cao và ban công rộng mở, tạo cảm giác gần gũi thiên nhiên và
+          thoải mái tuyệt đối cho gia chủ.
+        </p>
+        <p>
+          Khu biệt thự còn được quản lý bởi đơn vị vận hành chuyên nghiệp, cung
+          cấp đầy đủ các dịch vụ như vệ sinh, bảo trì, chăm sóc cảnh quan và hỗ
+          trợ kỹ thuật. Đây không chỉ là nơi để ở, mà là một không gian sống lý
+          tưởng dành cho những chủ nhân thành đạt và yêu cầu cao
+        </p>
+        <a href="https://yeagernguyen.github.io/Real__estate/"
+          >Quay trở lại trang chủ</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

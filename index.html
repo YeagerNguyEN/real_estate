@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        padding: 20px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .product-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Đảm bảo các phần tử tính toán kích thước chuẩn */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: white;
+        border-radius: 4px;
+        background: gray;
+      }
+
+      .for-sale {
+        background-color: #007bff;
+      }
+
+      .hot {
+        left: auto;
+        right: 10px;
+        background-color: #dc3545;
+      }
+
+      .product-card h3 {
+        margin: 10px;
+        font-size: 16px;
+      }
+
+      .location {
+        margin: 0 10px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .features {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+      }
+
+      .features li {
+        margin-bottom: 4px;
+      }
+
+      .price {
+        margin: 10px;
+        font-weight: bold;
+        color: #28a745;
+      }
+      .product-card {
+        transition: transform 0.3s ease;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+        z-index: 10; /* Để nổi lên trên các phần tử khác khi phóng to */
+      }
+    </style>
+    <title>YEAGER REAL ESTATE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .hero-title {
+        width: 100%;
+        height: 300px;
+        background-image: url("./abstract-colorful-shapes-background_361591-2848.avif");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      }
+
+      @media (max-width: 600px) {
+        .hero-title {
+          font-size: 24px;
+          height: 200px;
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Đây là phần hiển thị ô tiêu đề với ảnh nền -->
+    <div
+      class="hero-title"
+      ;
+      style="
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      "
+    >
+      TRA CỨU BẤT ĐỘNG SẢN
+    </div>
+
+    <!-- Nút chat Zalo -->
+    <a
+      href="https://zalo.me/0327363141"
+      class="zalo-button"
+      title="Chat Zalo với tôi"
+      target="_self"
+    >
+      <i class="fas fa-comment-dots"></i>
+    </a>
+    <h3 style="text-align: center">
+      Thông tin tại đây chỉ là mô phỏng mô hình web buôn bán bất động sản, mọi
+      thông tin đều không có thật
+    </h3>
+    <h2>Danh sách biệt thự</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./bietthuhoanggia.jpg" alt="The Manor" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt thự The Manor Central Park</h3>
+        <p class="location">
+          Khu đô thị The Manor Central Park, Đại lộ Chu Văn An, Quận Hoàng Mai,
+          Hà Nội
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 02</li>
+          <li>Phòng tắm: 02</li>
+          <li>Diện tích: trên 180m²</li>
+        </ul>
+        <p class="price">15.45 Tỷ</p>
+        <a href="./bietthuhoanggia.html">xem thông tin chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./bietthuroyal.jpg" alt="Opal Skyview" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt Thự Opal Skyview</h3>
+        <p class="location">
+          Khu phức hợp Opal Boulevard, Đại lộ Phạm Văn Đồng, Thành phố Thủ Đức,
+          TP.HCM
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 03</li>
+          <li>Phòng tắm: 03</li>
+          <li>Diện tích: Trên 50m²</li>
+        </ul>
+        <p class="price">7.8 Tỷ</p>
+        <a href="./bietthuroyal.html">xem chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./bietthusunny.jpg" alt="Biệt Thự Crystal Bay Villas" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt Thự Crystal Bay Villas</h3>
+        <p class="location">
+          Khu đô thị Opal Skyline, ven sông Sài Gòn, phường Hiệp Bình Chánh, TP.
+          Thủ Đức
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 06</li>
+          <li>Phòng tắm: 06</li>
+          <li>Diện tích: Trên 100²</li>
+        </ul>
+        <p class="price">10.5 Tỷ</p>
+        <a href="./bietthusunny.html">Xem thông tin chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./wow.png" alt="Biệt Thự The Empire Residence" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt Thự The Empire Residence</h3>
+        <p class="location">
+          Khu phức hợp The Empire, trục đường ven biển Võ Nguyên Giáp, phường
+          Hòa Hải, quận Ngũ Hành Sơn, TP. Đà Nẵng
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 10</li>
+          <li>Phòng tắm: 06</li>
+          <li>Diện tích: Trên 250m²</li>
+        </ul>
+        <p class="price">25 Tỷ</p>
+        <a href="./wow.html">Xem thông tin chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./nhathu5.jpg" alt="Biệt Thự Golden Horizon Villas" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt Thự Golden Horizon Villas</h3>
+        <p class="location">
+          Khu dân cư ven biển Golden Horizon, phường Long Hòa, quận Bình Thủy,
+          TP. Cần Thơ
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 04</li>
+          <li>Phòng tắm: 04</li>
+          <li>Diện tích: Trên 50m²</li>
+        </ul>
+        <p class="price">11 Tỷ</p>
+        <a href="./nhathu5.html">Xem thông tin chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./haha.jpg" alt="villa" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Forestée Villa</h3>
+        <p class="location">
+          Khu rừng sinh thái Forestée, xã Minh Phú, huyện Sóc Sơn, Hà Nội
+        </p>
+        <ul class="features">
+          <li>Phòng ngủ: 15</li>
+          <li>Phòng tắm: 15</li>
+          <li>Diện tích: Trên 350²</li>
+        </ul>
+        <p class="price">50 Tỷ</p>
+        <a href="./haha.html">Xem thông tin chi tiết tại đây</a>
+      </div>
+    </div>
+  </body>
+</html>

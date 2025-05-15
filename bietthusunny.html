@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./bietthusunny.jpg"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+<div class="description">
+  <h1>Biệt Thự Crystal Bay Villas – Kiến trúc Gạch Gỗ Đẳng Cấp</h1>
+  <p>
+    <strong>Địa chỉ:</strong> Khu đô thị Opal Skyline, ven sông Sài Gòn, phường Hiệp Bình Chánh, TP. Thủ Đức
+  </p>
+  <p>
+    <strong>Chủ đầu tư:</strong> Tập đoàn Đất Xanh – thương hiệu phát triển nhà ở cao cấp hàng đầu tại Việt Nam
+  </p>
+
+  <h2>Quy mô và thiết kế</h2>
+  <ul>
+    <li>
+      Biệt thự 2.5 tầng thiết kế mở, phối hợp hài hòa giữa tường gạch mộc và chất liệu gỗ tự nhiên, mang lại vẻ đẹp mộc mạc nhưng vẫn tinh tế
+    </li>
+    <li>
+      Diện tích sử dụng từ 110m² đến 180m², bố trí sân sau tiểu cảnh, phòng khách trần cao thoáng rộng, và phòng làm việc riêng
+    </li>
+    <li>
+      Trang bị nội thất full option: gỗ óc chó nhập khẩu, hệ tủ âm tường thông minh, thiết bị vệ sinh Kohler và hệ thống chiếu sáng tự động
+    </li>
+  </ul>
+
+  <h2>Tiện ích</h2>
+  <ul>
+    <li>
+      Hồ điều hòa và đường dạo bộ ven sông dài hơn 500m – lý tưởng cho người yêu thiên nhiên và phong cách sống wellness
+    </li>
+    <li>
+      Hệ thống an ninh nhiều lớp, điều khiển bằng app di động, bảo vệ 24/7 và tích hợp AI nhận diện người lạ
+    </li>
+    <li>
+      Clubhouse phong cách resort, khu BBQ, khu vui chơi trẻ em và trung tâm thiền định
+    </li>
+    <li>
+      Siêu thị tiện lợi, quán cà phê sân vườn và nhà thuốc chỉ cách biệt thự 1 phút đi bộ
+    </li>
+  </ul>
+
+  <h2>Vị trí và giá trị đầu tư</h2>
+  <ul>
+    <li>
+      Nằm gần tuyến Metro số 3B và đại lộ Phạm Văn Đồng – kết nối nhanh đến sân bay Tân Sơn Nhất và các quận trung tâm
+    </li>
+    <li>
+      Giá trị sinh lời cao trong 5 năm tới khi thành phố Thủ Đức tiếp tục mở rộng cơ sở hạ tầng và thu hút vốn đầu tư nước ngoài
+    </li>
+  </ul>
+
+  <p><strong>Dự kiến bàn giao:</strong> Quý 3 năm 2026</p>
+
+  <p>
+    Biệt thự Opal Skyview không chỉ là một không gian sống, mà còn là một “tác phẩm sống” giữa thiên nhiên. Phong cách gạch mộc kết hợp với các chi tiết gỗ trần và kính cường lực tạo nên một tổng thể hài hòa, vừa ấm cúng vừa hiện đại.
+  </p>
+  <p>
+    Mỗi căn biệt thự đều được thiết kế linh hoạt để đáp ứng nhu cầu làm việc tại nhà, thư giãn cuối tuần và tổ chức tiệc riêng tư. Từng đường nét kiến trúc đều hướng đến sự giản dị tinh tế, mang lại cảm giác gần gũi và thư thái cho gia chủ.
+  </p>
+  <p>
+    Khu biệt thự được vận hành bởi đơn vị quản lý quốc tế, cung cấp đầy đủ các dịch vụ từ chăm sóc cây xanh, vệ sinh định kỳ cho đến bảo trì kỹ thuật chuyên sâu. Đây là lựa chọn hoàn hảo dành cho những chủ nhân yêu thích không gian sống tinh tế, riêng tư nhưng vẫn kết nối với nhịp sống năng động của đô thị hiện đại.
+  </p>
+</div>
+<a href="https://yeagernguyen.github.io/Real__estate/">Quay trở lại trang chủ</a>
+  </body>
+</html>

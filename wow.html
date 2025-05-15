@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .zalo-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #0084ff;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 28px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        animation: pulse-shake 3s ease-in-out infinite;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .zalo-button:hover {
+        background-color: #006ad6;
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        40% {
+          transform: scale(1) rotate(-5deg);
+        }
+        60% {
+          transform: scale(1.05) rotate(5deg);
+        }
+        80% {
+          transform: scale(1) rotate(0deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+
+      .product-image:hover {
+        transform: scale(1.05);
+      }
+
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+
+      .description p {
+        margin-bottom: 12px;
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./wow.png"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+<div class="description">
+  <h1>Biệt Thự The Empire Residence – Tuyệt tác kiến trúc giữa lòng đô thị</h1>
+  <p>
+    <strong>Địa chỉ:</strong> Khu phức hợp The Empire, trục đường ven biển Võ Nguyên Giáp, phường Hòa Hải, quận Ngũ Hành Sơn, TP. Đà Nẵng
+  </p>
+  <p>
+    <strong>Chủ đầu tư:</strong> Empire Group – đơn vị phát triển bất động sản nghỉ dưỡng hàng đầu miền Trung
+  </p>
+
+  <h2>Quy mô và thiết kế</h2>
+  <ul>
+    <li>
+      Biệt thự 3 tầng thiết kế theo phong cách Á – Âu đương đại, mặt tiền thoáng rộng, điểm nhấn với mái dốc và các chi tiết gờ phào tinh xảo
+    </li>
+    <li>
+      Diện tích đất 250m², với khuôn viên vườn cảnh bao quanh – bố trí hồ cá Koi, lối đi đá tự nhiên, hàng rào cây xanh riêng biệt
+    </li>
+    <li>
+      Mỗi tầng đều có ban công rộng, cửa kính trượt panorama hướng ra vườn, tạo cảm giác giao thoa giữa nội thất và thiên nhiên
+    </li>
+  </ul>
+
+  <h2>Tiện ích</h2>
+  <ul>
+    <li>
+      Hồ bơi tràn bờ riêng biệt, khu lounge ngoài trời và sân vườn tổ chức tiệc BBQ
+    </li>
+    <li>
+      Phòng gym, spa và phòng giải trí riêng trong khu biệt thự
+    </li>
+    <li>
+      Hệ thống camera giám sát 24/7, thẻ từ ra vào từng khu, bảo vệ tuần tra 3 lớp
+    </li>
+    <li>
+      Gần biển, liền kề sân golf BRG và trung tâm thương mại giải trí lớn nhất khu vực
+    </li>
+  </ul>
+
+  <h2>Vị trí và giá trị đầu tư</h2>
+  <ul>
+    <li>
+      Nằm trong “tam giác vàng” du lịch Đà Nẵng – Hội An – Bà Nà Hills, hạ tầng du lịch và giao thông phát triển vượt trội
+    </li>
+    <li>
+      Tiềm năng khai thác nghỉ dưỡng và cho thuê Airbnb với tỉ suất sinh lời bền vững
+    </li>
+  </ul>
+
+  <p><strong>Dự kiến bàn giao:</strong> Quý 2 năm 2027</p>
+
+  <p>
+    Biệt thự The Empire Residence là không gian sống lý tưởng dành cho những gia chủ đề cao sự riêng tư, đẳng cấp và kết nối với thiên nhiên. Với khu vườn cảnh rộng hiếm có trong lòng đô thị, chủ nhân có thể tận hưởng những buổi trà chiều yên tĩnh, tiệc gia đình ngoài trời hay đơn giản là thư giãn giữa không gian xanh.
+  </p>
+  <p>
+    Thiết kế hướng ánh sáng tự nhiên, trần cao và không gian mở giúp tối ưu hóa năng lượng, tạo cảm giác thông thoáng và tràn đầy sinh khí cho toàn bộ biệt thự. Vật liệu hoàn thiện được tuyển chọn kỹ lưỡng từ đá tự nhiên, gỗ cao cấp và kính cường lực dày.
+  </p>
+  <p>
+    Đây không chỉ là nơi an cư, mà còn là tuyên ngôn phong cách sống của những người thành đạt – kết hợp giữa nghỉ dưỡng, đầu tư và tận hưởng cuộc sống mỗi ngày.
+  </p>
+</div>
+        <a href="https://yeagernguyen.github.io/Real__estate/">Quay trở lại trang chủ</a>
+      </div>
+    </div>
+  </body>
+</html>
